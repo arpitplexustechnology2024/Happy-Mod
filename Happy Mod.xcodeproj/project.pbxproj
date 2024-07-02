@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDAB19EA2C34662200C04228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19E92C34662200C04228 /* AppDelegate.swift */; };
+		BDAB19EC2C34662200C04228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19EB2C34662200C04228 /* SceneDelegate.swift */; };
+		BDAB19EE2C34662200C04228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19ED2C34662200C04228 /* ViewController.swift */; };
+		BDAB19F12C34662200C04228 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F02C34662200C04228 /* Base */; };
+		BDAB19F32C34662400C04228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F22C34662400C04228 /* Assets.xcassets */; };
+		BDAB19F62C34662400C04228 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F52C34662400C04228 /* Base */; };
+		BDAB1A012C34662400C04228 /* Happy_ModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A002C34662400C04228 /* Happy_ModTests.swift */; };
+		BDAB1A0B2C34662400C04228 /* Happy_ModUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A0A2C34662400C04228 /* Happy_ModUITests.swift */; };
+		BDAB1A0D2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A0C2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDAB19FD2C34662400C04228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAB19DE2C34662200C04228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAB19E52C34662200C04228;
+			remoteInfo = "Happy Mod";
+		};
+		BDAB1A072C34662400C04228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAB19DE2C34662200C04228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAB19E52C34662200C04228;
+			remoteInfo = "Happy Mod";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDAB19E62C34662200C04228 /* Happy Mod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Mod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAB19E92C34662200C04228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDAB19EB2C34662200C04228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDAB19ED2C34662200C04228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDAB19F02C34662200C04228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDAB19F22C34662400C04228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDAB19F52C34662400C04228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDAB19F72C34662400C04228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAB19FC2C34662400C04228 /* Happy ModTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy ModTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAB1A002C34662400C04228 /* Happy_ModTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ModTests.swift; sourceTree = "<group>"; };
+		BDAB1A062C34662400C04228 /* Happy ModUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy ModUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAB1A0A2C34662400C04228 /* Happy_ModUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ModUITests.swift; sourceTree = "<group>"; };
+		BDAB1A0C2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ModUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDAB19E32C34662200C04228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB19F92C34662400C04228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB1A032C34662400C04228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDAB19DD2C34662200C04228 = {
+			isa = PBXGroup;
+			children = (
+				BDAB19E82C34662200C04228 /* Happy Mod */,
+				BDAB19FF2C34662400C04228 /* Happy ModTests */,
+				BDAB1A092C34662400C04228 /* Happy ModUITests */,
+				BDAB19E72C34662200C04228 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDAB19E72C34662200C04228 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB19E62C34662200C04228 /* Happy Mod.app */,
+				BDAB19FC2C34662400C04228 /* Happy ModTests.xctest */,
+				BDAB1A062C34662400C04228 /* Happy ModUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAB19E82C34662200C04228 /* Happy Mod */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB19E92C34662200C04228 /* AppDelegate.swift */,
+				BDAB19EB2C34662200C04228 /* SceneDelegate.swift */,
+				BDAB19ED2C34662200C04228 /* ViewController.swift */,
+				BDAB19EF2C34662200C04228 /* Main.storyboard */,
+				BDAB19F22C34662400C04228 /* Assets.xcassets */,
+				BDAB19F42C34662400C04228 /* LaunchScreen.storyboard */,
+				BDAB19F72C34662400C04228 /* Info.plist */,
+			);
+			path = "Happy Mod";
+			sourceTree = "<group>";
+		};
+		BDAB19FF2C34662400C04228 /* Happy ModTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB1A002C34662400C04228 /* Happy_ModTests.swift */,
+			);
+			path = "Happy ModTests";
+			sourceTree = "<group>";
+		};
+		BDAB1A092C34662400C04228 /* Happy ModUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB1A0A2C34662400C04228 /* Happy_ModUITests.swift */,
+				BDAB1A0C2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift */,
+			);
+			path = "Happy ModUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDAB19E52C34662200C04228 /* Happy Mod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAB1A102C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy Mod" */;
+			buildPhases = (
+				BDAB19E22C34662200C04228 /* Sources */,
+				BDAB19E32C34662200C04228 /* Frameworks */,
+				BDAB19E42C34662200C04228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Mod";
+			productName = "Happy Mod";
+			productReference = BDAB19E62C34662200C04228 /* Happy Mod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDAB19FB2C34662400C04228 /* Happy ModTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAB1A132C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModTests" */;
+			buildPhases = (
+				BDAB19F82C34662400C04228 /* Sources */,
+				BDAB19F92C34662400C04228 /* Frameworks */,
+				BDAB19FA2C34662400C04228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAB19FE2C34662400C04228 /* PBXTargetDependency */,
+			);
+			name = "Happy ModTests";
+			productName = "Happy ModTests";
+			productReference = BDAB19FC2C34662400C04228 /* Happy ModTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDAB1A052C34662400C04228 /* Happy ModUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAB1A162C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModUITests" */;
+			buildPhases = (
+				BDAB1A022C34662400C04228 /* Sources */,
+				BDAB1A032C34662400C04228 /* Frameworks */,
+				BDAB1A042C34662400C04228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAB1A082C34662400C04228 /* PBXTargetDependency */,
+			);
+			name = "Happy ModUITests";
+			productName = "Happy ModUITests";
+			productReference = BDAB1A062C34662400C04228 /* Happy ModUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDAB19DE2C34662200C04228 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BDAB19E52C34662200C04228 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BDAB19FB2C34662400C04228 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BDAB19E52C34662200C04228;
+					};
+					BDAB1A052C34662400C04228 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BDAB19E52C34662200C04228;
+					};
+				};
+			};
+			buildConfigurationList = BDAB19E12C34662200C04228 /* Build configuration list for PBXProject "Happy Mod" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDAB19DD2C34662200C04228;
+			productRefGroup = BDAB19E72C34662200C04228 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDAB19E52C34662200C04228 /* Happy Mod */,
+				BDAB19FB2C34662400C04228 /* Happy ModTests */,
+				BDAB1A052C34662400C04228 /* Happy ModUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDAB19E42C34662200C04228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAB19F32C34662400C04228 /* Assets.xcassets in Resources */,
+				BDAB19F62C34662400C04228 /* Base in Resources */,
+				BDAB19F12C34662200C04228 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB19FA2C34662400C04228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB1A042C34662400C04228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDAB19E22C34662200C04228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAB19EE2C34662200C04228 /* ViewController.swift in Sources */,
+				BDAB19EA2C34662200C04228 /* AppDelegate.swift in Sources */,
+				BDAB19EC2C34662200C04228 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB19F82C34662400C04228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAB1A012C34662400C04228 /* Happy_ModTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAB1A022C34662400C04228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAB1A0D2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift in Sources */,
+				BDAB1A0B2C34662400C04228 /* Happy_ModUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDAB19FE2C34662400C04228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAB19E52C34662200C04228 /* Happy Mod */;
+			targetProxy = BDAB19FD2C34662400C04228 /* PBXContainerItemProxy */;
+		};
+		BDAB1A082C34662400C04228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAB19E52C34662200C04228 /* Happy Mod */;
+			targetProxy = BDAB1A072C34662400C04228 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDAB19EF2C34662200C04228 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAB19F02C34662200C04228 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAB19F42C34662400C04228 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAB19F52C34662400C04228 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDAB1A0E2C34662400C04228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDAB1A0F2C34662400C04228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDAB1A112C34662400C04228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Happy Mod/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-Mod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDAB1A122C34662400C04228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Happy Mod/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-Mod";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDAB1A142C34662400C04228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Mod.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Happy Mod";
+			};
+			name = Debug;
+		};
+		BDAB1A152C34662400C04228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Mod.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Happy Mod";
+			};
+			name = Release;
+		};
+		BDAB1A172C34662400C04228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Happy Mod";
+			};
+			name = Debug;
+		};
+		BDAB1A182C34662400C04228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVARKUXCR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Happy Mod";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDAB19E12C34662200C04228 /* Build configuration list for PBXProject "Happy Mod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAB1A0E2C34662400C04228 /* Debug */,
+				BDAB1A0F2C34662400C04228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAB1A102C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy Mod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAB1A112C34662400C04228 /* Debug */,
+				BDAB1A122C34662400C04228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAB1A132C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAB1A142C34662400C04228 /* Debug */,
+				BDAB1A152C34662400C04228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAB1A162C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAB1A172C34662400C04228 /* Debug */,
+				BDAB1A182C34662400C04228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDAB19DE2C34662200C04228 /* Project object */;
+}
