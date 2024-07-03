@@ -1,25 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="erk-zs-PDr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="SGL-51-2ZK">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="erk-zs-PDr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecF-RE-LNl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="JL0-rM-KF1">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GM4-iu-4lz">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f92-Qk-Hl5">
+                                <rect key="frame" x="57.333333333333343" y="515" width="278.33333333333326" height="66.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to, Happy Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-Xl-iEE">
+                                        <rect key="frame" x="0.0" y="0.0" width="278.33333333333331" height="30.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW4-u5-neH">
+                                        <rect key="frame" x="16.666666666666657" y="30.333333333333371" width="244.99999999999997" height="36"/>
+                                        <string key="text">The most common mind games and
+power plays that people play</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="auo-k7-c6T"/>
+                        <color key="backgroundColor" red="0.31876319650000001" green="1" blue="0.54818910359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JL0-rM-KF1" firstAttribute="leading" secondItem="auo-k7-c6T" secondAttribute="leading" id="4WQ-cd-6db"/>
+                            <constraint firstItem="GM4-iu-4lz" firstAttribute="centerY" secondItem="ecF-RE-LNl" secondAttribute="centerY" id="8Cb-yk-eIY"/>
+                            <constraint firstItem="JL0-rM-KF1" firstAttribute="top" secondItem="auo-k7-c6T" secondAttribute="top" id="9eF-xJ-yt0"/>
+                            <constraint firstItem="GM4-iu-4lz" firstAttribute="width" secondItem="JL0-rM-KF1" secondAttribute="width" multiplier="0.610687" id="FaJ-U1-kUh"/>
+                            <constraint firstItem="f92-Qk-Hl5" firstAttribute="top" secondItem="GM4-iu-4lz" secondAttribute="bottom" constant="25" id="Fby-Ei-PQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="JL0-rM-KF1" secondAttribute="bottom" id="Q7h-lV-zAj"/>
+                            <constraint firstItem="f92-Qk-Hl5" firstAttribute="centerX" secondItem="ecF-RE-LNl" secondAttribute="centerX" id="TSn-5r-H3C"/>
+                            <constraint firstItem="GM4-iu-4lz" firstAttribute="height" secondItem="JL0-rM-KF1" secondAttribute="height" multiplier="0.161412" id="qGa-WW-QfS"/>
+                            <constraint firstItem="JL0-rM-KF1" firstAttribute="trailing" secondItem="auo-k7-c6T" secondAttribute="trailing" id="vdb-Nt-sMZ"/>
+                            <constraint firstItem="GM4-iu-4lz" firstAttribute="centerX" secondItem="ecF-RE-LNl" secondAttribute="centerX" id="x6q-Zx-xxd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VUT-Bt-abP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsh-mb-PDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="675.57251908396938" y="5.6338028169014089"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="1440" height="3104"/>
+        <image name="Logo" width="374" height="232"/>
+    </resources>
 </document>

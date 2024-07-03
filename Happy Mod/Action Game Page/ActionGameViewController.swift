@@ -18,6 +18,8 @@ class ActionGameViewController: UIViewController {
     var imageeArr = ["Play Cricket","Win Cricket"]
     var nameArr = ["Truck Trials","Boat Battles","Jumo Justin","Canon Soldier"]
     var nameeArr = ["Play Cricket","Win Cricket"]
+    let gameLinks = ["https://gamesnacks.com/games/trucktrials", "https://www.gameflare.com/online-game/boat-battle/", "https://gamesnacks.com/games/jumpwithjustin2","https://www.primarygames.com/puzzles/physics/cannonsandsoldiersmountainoffense/"]
+    let gameeLinks = ["https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,43 +39,43 @@ class ActionGameViewController: UIViewController {
 
 extension ActionGameViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        var count:Int?
-        
         if collectionView == self.actionGameCollectionview01 {
-            count = imageArr.count
+            return imageArr.count
+        } else {
+            return imageeArr.count
         }
-        
-        if collectionView == self.actionGameCollectionView02 {
-            count =  imageeArr.count
-        }
-        
-        return count!
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         if collectionView == self.actionGameCollectionview01 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionGameCell01", for: indexPath) as! ActionGameCell01
             cell.actionGameImageView.image = UIImage(named: imageArr[indexPath.row])
             cell.actionGameLabel.text = nameArr[indexPath.row]
             return cell
-        }
-        
-        if collectionView == self.actionGameCollectionView02 {
+        } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionGameCell02", for: indexPath) as! ActionGameCell02
             cell.actionGameImageView.image = UIImage(named: imageeArr[indexPath.row])
             cell.actionGameLabel.text = nameeArr[indexPath.row]
             return cell
         }
-        
-        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let gameName: String
+        let gameLink: String
+        
+        if collectionView == self.actionGameCollectionview01 {
+            gameName = nameArr[indexPath.row]
+            gameLink = gameLinks[indexPath.row]
+        } else {
+            gameName = nameeArr[indexPath.row]
+            gameLink = gameeLinks[indexPath.row]
+        }
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "GameStartViewController") as! GameStartViewController
+        vc.gameName = gameName
+        vc.gameLink = gameLink
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

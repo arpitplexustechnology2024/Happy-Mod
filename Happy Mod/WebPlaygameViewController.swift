@@ -6,24 +6,30 @@
 //
 
 import UIKit
+import WebKit
 
 class WebPlaygameViewController: UIViewController {
-
+    
+    var urlString: String?
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            super.viewDidLoad()
+            loadGame()
+        }
+    
+    @IBAction func btnBackTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        private func loadGame() {
+            guard let urlString = urlString, let url = URL(string: urlString) else {
+                print("Invalid URL string")
+                return
+            }
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    
 }

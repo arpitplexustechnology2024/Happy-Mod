@@ -18,6 +18,8 @@ class ClassicGamesViewController: UIViewController {
     var imageeArr = ["Play Cricket","Win Cricket"]
     var nameArr = ["Garden Bloom","garden Match","Rush","Diamond Rush"]
     var nameeArr = ["Play Cricket","Win Cricket"]
+    let gameLinks = ["https://www.crazygames.com/game/garden-bloom","https://www.gamepix.com/play/garden-match-3d","https://poki.com/en/g/match-arena","https://gamesnacks.com/games/diamondrush"]
+    let gameeLinks = ["https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,10 +74,21 @@ extension ClassicGamesViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let gameName: String
+        let gameLink: String
+        
+        if collectionView == self.classicGameCollectionview01 {
+            gameName = nameArr[indexPath.row]
+            gameLink = gameLinks[indexPath.row]
+        } else {
+            gameName = nameeArr[indexPath.row]
+            gameLink = gameeLinks[indexPath.row]
+        }
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "GameStartViewController") as! GameStartViewController
+        vc.gameName = gameName
+        vc.gameLink = gameLink
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

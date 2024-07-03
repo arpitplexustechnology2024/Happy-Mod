@@ -18,6 +18,8 @@ class MindGamesViewController: UIViewController {
     var imageeArr = ["Park Your Car","Element Balls"]
     var nameArr = ["Play Cricket","Win Cricket","Pets Rush","Tower Crash 3D"]
     var nameeArr = ["Park Your Car","Element Balls"]
+    let gameLinks = ["https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup", "https://gamesnacks.com/games/petsrush2","https://gamesnacks.com/games/towercrash3d"]
+    let gameeLinks = ["https://www.cbc.ca/kids/games/play/park-your-car","https://www.gamepix.com/play/element-balls"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,10 +74,21 @@ extension MindGamesViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let gameName: String
+        let gameLink: String
+        
+        if collectionView == self.mindGameCollectionview01 {
+            gameName = nameArr[indexPath.row]
+            gameLink = gameLinks[indexPath.row]
+        } else {
+            gameName = nameeArr[indexPath.row]
+            gameLink = gameeLinks[indexPath.row]
+        }
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "GameStartViewController") as! GameStartViewController
+        vc.gameName = gameName
+        vc.gameLink = gameLink
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

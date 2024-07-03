@@ -40,20 +40,20 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5w-YA-UY8">
-                    <rect key="frame" x="318" y="259" width="47" height="34"/>
+                    <rect key="frame" x="318" y="239" width="47" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="Install">
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-of-cat">
-                    <rect key="frame" x="230" y="267.5" width="33" height="17"/>
+                    <rect key="frame" x="230" y="247.5" width="33" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-UL-Q8H">
-                    <rect key="frame" x="273" y="267.5" width="35" height="17"/>
+                    <rect key="frame" x="273" y="247.5" width="35" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -68,9 +68,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-yu-K4i" customClass="GADMediaView">
-                    <rect key="frame" x="62.5" y="102" width="250" height="150"/>
+                    <rect key="frame" x="62.5" y="102" width="250" height="130"/>
                     <constraints>
-                        <constraint firstAttribute="height" priority="999" constant="150" id="JYO-VS-mga"/>
+                        <constraint firstAttribute="height" priority="999" constant="130" id="JYO-VS-mga"/>
                         <constraint firstAttribute="width" constant="250" id="e3T-fD-di4"/>
                     </constraints>
                 </view>

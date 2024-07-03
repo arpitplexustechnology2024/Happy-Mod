@@ -18,6 +18,8 @@ class RacingGamesViewController: UIViewController {
     var imageeArr = ["EScooter","Traffic Tom"]
     var nameArr = ["Bus Simulator","Highway Rider","Play Cricket","Win Cricket"]
     var nameeArr = ["EScooter","Traffic Tom"]
+    let gameLinks = ["https://gameforge.com/en-US/littlegames/coach-bus-simulator/#","https://www.crazygames.com/game/highway-rider-extreme","https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup"]
+    let gameeLinks = ["https://www.crazygames.com/game/e-scooter","https://gamesnacks.com/games/traffictom"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,10 +73,21 @@ extension RacingGamesViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let gameName: String
+        let gameLink: String
+        
+        if collectionView == self.racingGameCollectionview01 {
+            gameName = nameArr[indexPath.row]
+            gameLink = gameLinks[indexPath.row]
+        } else {
+            gameName = nameeArr[indexPath.row]
+            gameLink = gameeLinks[indexPath.row]
+        }
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "GameStartViewController") as! GameStartViewController
+        vc.gameName = gameName
+        vc.gameLink = gameLink
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

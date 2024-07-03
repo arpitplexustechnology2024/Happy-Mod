@@ -7,15 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14117246230350B8C970FF68 /* Pods_Happy_Mod_Happy_ModUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6067FEA73A3A2BD463C5C571 /* Pods_Happy_Mod_Happy_ModUITests.framework */; };
+		2887DB393D0A98CFBC246EE5 /* Pods_Happy_Mod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFE30A2DA1E4D860BE5FE2C /* Pods_Happy_Mod.framework */; };
+		33761910F4D9D529D245DF81 /* Pods_Happy_ModTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60F5A3A1FA00A86B3AE4AE9 /* Pods_Happy_ModTests.framework */; };
+		BDA0EF162C35B2FE00290E72 /* ClassicGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF152C35B2FE00290E72 /* ClassicGamesViewController.swift */; };
+		BDA0EF182C35B31E00290E72 /* RacingGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF172C35B31E00290E72 /* RacingGamesViewController.swift */; };
+		BDA0EF1A2C35B34F00290E72 /* MindGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF192C35B34F00290E72 /* MindGamesViewController.swift */; };
+		BDA0EF1C2C35B36C00290E72 /* CardGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF1B2C35B36C00290E72 /* CardGamesViewController.swift */; };
+		BDA0EF1E2C35B57700290E72 /* classicGameCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF1D2C35B57700290E72 /* classicGameCell01.swift */; };
+		BDA0EF202C35B58100290E72 /* classicGamesCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF1F2C35B58100290E72 /* classicGamesCell02.swift */; };
+		BDA0EF222C35B58D00290E72 /* RacingGamesCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF212C35B58D00290E72 /* RacingGamesCell01.swift */; };
+		BDA0EF242C35B59500290E72 /* RacingGamesCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF232C35B59500290E72 /* RacingGamesCell02.swift */; };
+		BDA0EF262C35B5C500290E72 /* MindGamesCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF252C35B5C500290E72 /* MindGamesCell01.swift */; };
+		BDA0EF2A2C35B5FE00290E72 /* CardGamesCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF292C35B5FE00290E72 /* CardGamesCell01.swift */; };
+		BDA0EF2C2C35B60700290E72 /* CardGamesCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF2B2C35B60700290E72 /* CardGamesCell02.swift */; };
+		BDA0EF2E2C35B66D00290E72 /* MindGamesCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF2D2C35B66D00290E72 /* MindGamesCell02.swift */; };
+		BDA0EF302C35C23100290E72 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF2F2C35C23100290E72 /* GameStartViewController.swift */; };
+		BDA0EF322C35C2DB00290E72 /* GameStartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF312C35C2DB00290E72 /* GameStartCollectionViewCell.swift */; };
+		BDA0EF342C35CD0600290E72 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF332C35CD0600290E72 /* ThankYouViewController.swift */; };
+		BDA0EF422C35D85D00290E72 /* WebPlaygameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA0EF412C35D85D00290E72 /* WebPlaygameViewController.swift */; };
 		BDAB19EA2C34662200C04228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19E92C34662200C04228 /* AppDelegate.swift */; };
 		BDAB19EC2C34662200C04228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19EB2C34662200C04228 /* SceneDelegate.swift */; };
-		BDAB19EE2C34662200C04228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB19ED2C34662200C04228 /* ViewController.swift */; };
 		BDAB19F12C34662200C04228 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F02C34662200C04228 /* Base */; };
 		BDAB19F32C34662400C04228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F22C34662400C04228 /* Assets.xcassets */; };
 		BDAB19F62C34662400C04228 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDAB19F52C34662400C04228 /* Base */; };
 		BDAB1A012C34662400C04228 /* Happy_ModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A002C34662400C04228 /* Happy_ModTests.swift */; };
 		BDAB1A0B2C34662400C04228 /* Happy_ModUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A0A2C34662400C04228 /* Happy_ModUITests.swift */; };
 		BDAB1A0D2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A0C2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift */; };
+		BDAB1A1A2C34679D00C04228 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A192C34679D00C04228 /* SplashViewController.swift */; };
+		BDAB1A1C2C34731900C04228 /* InterstitialAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A1B2C34731900C04228 /* InterstitialAdUtility.swift */; };
+		BDAB1A1E2C34751E00C04228 /* AdsSkipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A1D2C34751D00C04228 /* AdsSkipViewController.swift */; };
+		BDAB1A232C347DB200C04228 /* NativeAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB1A1F2C347DB200C04228 /* NativeAdUtility.swift */; };
+		BDAB1A242C347DB200C04228 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAB1A202C347DB200C04228 /* NativeAdView.xib */; };
+		BDB020DD2C34880500D1DB85 /* BannerAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020DC2C34880500D1DB85 /* BannerAdUtility.swift */; };
+		BDB020DF2C34ACF800D1DB85 /* PlayegameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020DE2C34ACF800D1DB85 /* PlayegameViewController.swift */; };
+		BDB020E12C34B94600D1DB85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020E02C34B94600D1DB85 /* HomeViewController.swift */; };
+		BDB020E32C34BEA200D1DB85 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020E22C34BEA200D1DB85 /* HomeCollectionViewCell.swift */; };
+		BDB020E52C34C29A00D1DB85 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020E42C34C29A00D1DB85 /* CategoryCollectionViewCell.swift */; };
+		BDB020E72C34C2A200D1DB85 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020E62C34C2A200D1DB85 /* CategoryViewController.swift */; };
+		BDB020E92C34CE8700D1DB85 /* ActionGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020E82C34CE8700D1DB85 /* ActionGameViewController.swift */; };
+		BDB020EB2C34CF5800D1DB85 /* ActionGameCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020EA2C34CF5800D1DB85 /* ActionGameCell01.swift */; };
+		BDB020ED2C34D62C00D1DB85 /* ActionGameCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB020EC2C34D62C00D1DB85 /* ActionGameCell02.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +68,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4952080C74E84A6BD16B0120 /* Pods-Happy Mod-Happy ModUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Mod-Happy ModUITests.release.xcconfig"; path = "Target Support Files/Pods-Happy Mod-Happy ModUITests/Pods-Happy Mod-Happy ModUITests.release.xcconfig"; sourceTree = "<group>"; };
+		558C844C9BBEC8466280DDC5 /* Pods-Happy Mod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Mod.release.xcconfig"; path = "Target Support Files/Pods-Happy Mod/Pods-Happy Mod.release.xcconfig"; sourceTree = "<group>"; };
+		6067FEA73A3A2BD463C5C571 /* Pods_Happy_Mod_Happy_ModUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_Mod_Happy_ModUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D1F0DE2A95BD4E10A39620 /* Pods-Happy Mod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Mod.debug.xcconfig"; path = "Target Support Files/Pods-Happy Mod/Pods-Happy Mod.debug.xcconfig"; sourceTree = "<group>"; };
+		8BFE30A2DA1E4D860BE5FE2C /* Pods_Happy_Mod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_Mod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90522B6CAFD7C46FEB0C2BE6 /* Pods-Happy ModTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ModTests.release.xcconfig"; path = "Target Support Files/Pods-Happy ModTests/Pods-Happy ModTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDA0EF152C35B2FE00290E72 /* ClassicGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicGamesViewController.swift; sourceTree = "<group>"; };
+		BDA0EF172C35B31E00290E72 /* RacingGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGamesViewController.swift; sourceTree = "<group>"; };
+		BDA0EF192C35B34F00290E72 /* MindGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGamesViewController.swift; sourceTree = "<group>"; };
+		BDA0EF1B2C35B36C00290E72 /* CardGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGamesViewController.swift; sourceTree = "<group>"; };
+		BDA0EF1D2C35B57700290E72 /* classicGameCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classicGameCell01.swift; sourceTree = "<group>"; };
+		BDA0EF1F2C35B58100290E72 /* classicGamesCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classicGamesCell02.swift; sourceTree = "<group>"; };
+		BDA0EF212C35B58D00290E72 /* RacingGamesCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGamesCell01.swift; sourceTree = "<group>"; };
+		BDA0EF232C35B59500290E72 /* RacingGamesCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGamesCell02.swift; sourceTree = "<group>"; };
+		BDA0EF252C35B5C500290E72 /* MindGamesCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGamesCell01.swift; sourceTree = "<group>"; };
+		BDA0EF292C35B5FE00290E72 /* CardGamesCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGamesCell01.swift; sourceTree = "<group>"; };
+		BDA0EF2B2C35B60700290E72 /* CardGamesCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGamesCell02.swift; sourceTree = "<group>"; };
+		BDA0EF2D2C35B66D00290E72 /* MindGamesCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGamesCell02.swift; sourceTree = "<group>"; };
+		BDA0EF2F2C35C23100290E72 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		BDA0EF312C35C2DB00290E72 /* GameStartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDA0EF332C35CD0600290E72 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		BDA0EF412C35D85D00290E72 /* WebPlaygameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPlaygameViewController.swift; sourceTree = "<group>"; };
 		BDAB19E62C34662200C04228 /* Happy Mod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Mod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAB19E92C34662200C04228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDAB19EB2C34662200C04228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDAB19ED2C34662200C04228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDAB19F02C34662200C04228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDAB19F22C34662400C04228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDAB19F52C34662400C04228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +102,23 @@
 		BDAB1A062C34662400C04228 /* Happy ModUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy ModUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAB1A0A2C34662400C04228 /* Happy_ModUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ModUITests.swift; sourceTree = "<group>"; };
 		BDAB1A0C2C34662400C04228 /* Happy_ModUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ModUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDAB1A192C34679D00C04228 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		BDAB1A1B2C34731900C04228 /* InterstitialAdUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAdUtility.swift; sourceTree = "<group>"; };
+		BDAB1A1D2C34751D00C04228 /* AdsSkipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsSkipViewController.swift; sourceTree = "<group>"; };
+		BDAB1A1F2C347DB200C04228 /* NativeAdUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdUtility.swift; sourceTree = "<group>"; };
+		BDAB1A202C347DB200C04228 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		BDB020DC2C34880500D1DB85 /* BannerAdUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAdUtility.swift; sourceTree = "<group>"; };
+		BDB020DE2C34ACF800D1DB85 /* PlayegameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayegameViewController.swift; sourceTree = "<group>"; };
+		BDB020E02C34B94600D1DB85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BDB020E22C34BEA200D1DB85 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDB020E42C34C29A00D1DB85 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDB020E62C34C2A200D1DB85 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BDB020E82C34CE8700D1DB85 /* ActionGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionGameViewController.swift; sourceTree = "<group>"; };
+		BDB020EA2C34CF5800D1DB85 /* ActionGameCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionGameCell01.swift; sourceTree = "<group>"; };
+		BDB020EC2C34D62C00D1DB85 /* ActionGameCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionGameCell02.swift; sourceTree = "<group>"; };
+		DBCA30218F5BD28BB01B086F /* Pods-Happy ModTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ModTests.debug.xcconfig"; path = "Target Support Files/Pods-Happy ModTests/Pods-Happy ModTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E350E9C22A58BE38A7BF5B42 /* Pods-Happy Mod-Happy ModUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Mod-Happy ModUITests.debug.xcconfig"; path = "Target Support Files/Pods-Happy Mod-Happy ModUITests/Pods-Happy Mod-Happy ModUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F60F5A3A1FA00A86B3AE4AE9 /* Pods_Happy_ModTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_ModTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2887DB393D0A98CFBC246EE5 /* Pods_Happy_Mod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33761910F4D9D529D245DF81 /* Pods_Happy_ModTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +142,145 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14117246230350B8C970FF68 /* Pods_Happy_Mod_Happy_ModUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4504582E0FE18C1AB0FCCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE30A2DA1E4D860BE5FE2C /* Pods_Happy_Mod.framework */,
+				6067FEA73A3A2BD463C5C571 /* Pods_Happy_Mod_Happy_ModUITests.framework */,
+				F60F5A3A1FA00A86B3AE4AE9 /* Pods_Happy_ModTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		715EAFB0AC4E6376F1353372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87D1F0DE2A95BD4E10A39620 /* Pods-Happy Mod.debug.xcconfig */,
+				558C844C9BBEC8466280DDC5 /* Pods-Happy Mod.release.xcconfig */,
+				E350E9C22A58BE38A7BF5B42 /* Pods-Happy Mod-Happy ModUITests.debug.xcconfig */,
+				4952080C74E84A6BD16B0120 /* Pods-Happy Mod-Happy ModUITests.release.xcconfig */,
+				DBCA30218F5BD28BB01B086F /* Pods-Happy ModTests.debug.xcconfig */,
+				90522B6CAFD7C46FEB0C2BE6 /* Pods-Happy ModTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDA0EF352C35D37400290E72 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDB020E02C34B94600D1DB85 /* HomeViewController.swift */,
+				BDB020E22C34BEA200D1DB85 /* HomeCollectionViewCell.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF362C35D38500290E72 /* Category Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDB020E62C34C2A200D1DB85 /* CategoryViewController.swift */,
+				BDB020E42C34C29A00D1DB85 /* CategoryCollectionViewCell.swift */,
+			);
+			path = "Category Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF372C35D39600290E72 /* Action Game Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDB020E82C34CE8700D1DB85 /* ActionGameViewController.swift */,
+				BDB020EA2C34CF5800D1DB85 /* ActionGameCell01.swift */,
+				BDB020EC2C34D62C00D1DB85 /* ActionGameCell02.swift */,
+			);
+			path = "Action Game Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF382C35D3A100290E72 /* Classic Gage Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF152C35B2FE00290E72 /* ClassicGamesViewController.swift */,
+				BDA0EF1D2C35B57700290E72 /* classicGameCell01.swift */,
+				BDA0EF1F2C35B58100290E72 /* classicGamesCell02.swift */,
+			);
+			path = "Classic Gage Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF392C35D3AF00290E72 /* RAcing Game Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF172C35B31E00290E72 /* RacingGamesViewController.swift */,
+				BDA0EF212C35B58D00290E72 /* RacingGamesCell01.swift */,
+				BDA0EF232C35B59500290E72 /* RacingGamesCell02.swift */,
+			);
+			path = "RAcing Game Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3A2C35D3BB00290E72 /* Mind Game Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF192C35B34F00290E72 /* MindGamesViewController.swift */,
+				BDA0EF252C35B5C500290E72 /* MindGamesCell01.swift */,
+				BDA0EF2D2C35B66D00290E72 /* MindGamesCell02.swift */,
+			);
+			path = "Mind Game Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3B2C35D3C900290E72 /* Card Game Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF1B2C35B36C00290E72 /* CardGamesViewController.swift */,
+				BDA0EF292C35B5FE00290E72 /* CardGamesCell01.swift */,
+				BDA0EF2B2C35B60700290E72 /* CardGamesCell02.swift */,
+			);
+			path = "Card Game Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3C2C35D3D400290E72 /* Game Start Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF2F2C35C23100290E72 /* GameStartViewController.swift */,
+				BDA0EF312C35C2DB00290E72 /* GameStartCollectionViewCell.swift */,
+			);
+			path = "Game Start Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3D2C35D3EA00290E72 /* Thank You Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EF332C35CD0600290E72 /* ThankYouViewController.swift */,
+			);
+			path = "Thank You Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3E2C35D3FA00290E72 /* Splash Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB1A192C34679D00C04228 /* SplashViewController.swift */,
+			);
+			path = "Splash Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF3F2C35D40F00290E72 /* Ads Skip Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB1A1D2C34751D00C04228 /* AdsSkipViewController.swift */,
+			);
+			path = "Ads Skip Page";
+			sourceTree = "<group>";
+		};
+		BDA0EF402C35D41900290E72 /* Play Game Page */ = {
+			isa = PBXGroup;
+			children = (
+				BDB020DE2C34ACF800D1DB85 /* PlayegameViewController.swift */,
+			);
+			path = "Play Game Page";
+			sourceTree = "<group>";
+		};
 		BDAB19DD2C34662200C04228 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +288,8 @@
 				BDAB19FF2C34662400C04228 /* Happy ModTests */,
 				BDAB1A092C34662400C04228 /* Happy ModUITests */,
 				BDAB19E72C34662200C04228 /* Products */,
+				715EAFB0AC4E6376F1353372 /* Pods */,
+				3B4504582E0FE18C1AB0FCCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +308,20 @@
 			children = (
 				BDAB19E92C34662200C04228 /* AppDelegate.swift */,
 				BDAB19EB2C34662200C04228 /* SceneDelegate.swift */,
-				BDAB19ED2C34662200C04228 /* ViewController.swift */,
+				BDAB1A222C347DB200C04228 /* Ads */,
+				BDA0EF3E2C35D3FA00290E72 /* Splash Page */,
+				BDA0EF3F2C35D40F00290E72 /* Ads Skip Page */,
+				BDA0EF352C35D37400290E72 /* Home Page */,
+				BDA0EF362C35D38500290E72 /* Category Page */,
+				BDA0EF402C35D41900290E72 /* Play Game Page */,
+				BDA0EF372C35D39600290E72 /* Action Game Page */,
+				BDA0EF382C35D3A100290E72 /* Classic Gage Page */,
+				BDA0EF392C35D3AF00290E72 /* RAcing Game Page */,
+				BDA0EF3A2C35D3BB00290E72 /* Mind Game Page */,
+				BDA0EF3B2C35D3C900290E72 /* Card Game Page */,
+				BDA0EF3C2C35D3D400290E72 /* Game Start Page */,
+				BDA0EF3D2C35D3EA00290E72 /* Thank You Page */,
+				BDA0EF412C35D85D00290E72 /* WebPlaygameViewController.swift */,
 				BDAB19EF2C34662200C04228 /* Main.storyboard */,
 				BDAB19F22C34662400C04228 /* Assets.xcassets */,
 				BDAB19F42C34662400C04228 /* LaunchScreen.storyboard */,
@@ -127,6 +347,17 @@
 			path = "Happy ModUITests";
 			sourceTree = "<group>";
 		};
+		BDAB1A222C347DB200C04228 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB1A202C347DB200C04228 /* NativeAdView.xib */,
+				BDAB1A1F2C347DB200C04228 /* NativeAdUtility.swift */,
+				BDB020DC2C34880500D1DB85 /* BannerAdUtility.swift */,
+				BDAB1A1B2C34731900C04228 /* InterstitialAdUtility.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDAB1A102C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy Mod" */;
 			buildPhases = (
+				A8F77256EE6EFF41494D042B /* [CP] Check Pods Manifest.lock */,
 				BDAB19E22C34662200C04228 /* Sources */,
 				BDAB19E32C34662200C04228 /* Frameworks */,
 				BDAB19E42C34662200C04228 /* Resources */,
+				EDE32A99AF6907B9AE667972 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +384,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDAB1A132C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModTests" */;
 			buildPhases = (
+				8E57E65AE675535ADC664AB3 /* [CP] Check Pods Manifest.lock */,
 				BDAB19F82C34662400C04228 /* Sources */,
 				BDAB19F92C34662400C04228 /* Frameworks */,
 				BDAB19FA2C34662400C04228 /* Resources */,
@@ -169,9 +403,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDAB1A162C34662400C04228 /* Build configuration list for PBXNativeTarget "Happy ModUITests" */;
 			buildPhases = (
+				C67E67914ABEAD121D849564 /* [CP] Check Pods Manifest.lock */,
 				BDAB1A022C34662400C04228 /* Sources */,
 				BDAB1A032C34662400C04228 /* Frameworks */,
 				BDAB1A042C34662400C04228 /* Resources */,
+				CA5B23498D0143C014B95726 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAB1A242C347DB200C04228 /* NativeAdView.xib in Resources */,
 				BDAB19F32C34662400C04228 /* Assets.xcassets in Resources */,
 				BDAB19F62C34662400C04228 /* Base in Resources */,
 				BDAB19F12C34662200C04228 /* Base in Resources */,
@@ -253,14 +490,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E57E65AE675535ADC664AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Happy ModTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8F77256EE6EFF41494D042B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Happy Mod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67E67914ABEAD121D849564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Happy Mod-Happy ModUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA5B23498D0143C014B95726 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Mod-Happy ModUITests/Pods-Happy Mod-Happy ModUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Mod-Happy ModUITests/Pods-Happy Mod-Happy ModUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Happy Mod-Happy ModUITests/Pods-Happy Mod-Happy ModUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE32A99AF6907B9AE667972 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Mod/Pods-Happy Mod-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Mod/Pods-Happy Mod-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Happy Mod/Pods-Happy Mod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDAB19E22C34662200C04228 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAB19EE2C34662200C04228 /* ViewController.swift in Sources */,
+				BDA0EF1A2C35B34F00290E72 /* MindGamesViewController.swift in Sources */,
+				BDA0EF2C2C35B60700290E72 /* CardGamesCell02.swift in Sources */,
+				BDAB1A232C347DB200C04228 /* NativeAdUtility.swift in Sources */,
+				BDA0EF1C2C35B36C00290E72 /* CardGamesViewController.swift in Sources */,
+				BDAB1A1E2C34751E00C04228 /* AdsSkipViewController.swift in Sources */,
+				BDA0EF162C35B2FE00290E72 /* ClassicGamesViewController.swift in Sources */,
+				BDAB1A1A2C34679D00C04228 /* SplashViewController.swift in Sources */,
+				BDA0EF2A2C35B5FE00290E72 /* CardGamesCell01.swift in Sources */,
+				BDB020E92C34CE8700D1DB85 /* ActionGameViewController.swift in Sources */,
+				BDA0EF342C35CD0600290E72 /* ThankYouViewController.swift in Sources */,
+				BDA0EF182C35B31E00290E72 /* RacingGamesViewController.swift in Sources */,
+				BDA0EF242C35B59500290E72 /* RacingGamesCell02.swift in Sources */,
+				BDA0EF2E2C35B66D00290E72 /* MindGamesCell02.swift in Sources */,
 				BDAB19EA2C34662200C04228 /* AppDelegate.swift in Sources */,
+				BDB020E72C34C2A200D1DB85 /* CategoryViewController.swift in Sources */,
+				BDB020EB2C34CF5800D1DB85 /* ActionGameCell01.swift in Sources */,
+				BDA0EF322C35C2DB00290E72 /* GameStartCollectionViewCell.swift in Sources */,
+				BDB020DF2C34ACF800D1DB85 /* PlayegameViewController.swift in Sources */,
+				BDB020E32C34BEA200D1DB85 /* HomeCollectionViewCell.swift in Sources */,
+				BDA0EF1E2C35B57700290E72 /* classicGameCell01.swift in Sources */,
+				BDA0EF222C35B58D00290E72 /* RacingGamesCell01.swift in Sources */,
+				BDA0EF422C35D85D00290E72 /* WebPlaygameViewController.swift in Sources */,
+				BDA0EF262C35B5C500290E72 /* MindGamesCell01.swift in Sources */,
+				BDB020E12C34B94600D1DB85 /* HomeViewController.swift in Sources */,
+				BDB020DD2C34880500D1DB85 /* BannerAdUtility.swift in Sources */,
+				BDB020E52C34C29A00D1DB85 /* CategoryCollectionViewCell.swift in Sources */,
+				BDA0EF302C35C23100290E72 /* GameStartViewController.swift in Sources */,
 				BDAB19EC2C34662200C04228 /* SceneDelegate.swift in Sources */,
+				BDA0EF202C35B58100290E72 /* classicGamesCell02.swift in Sources */,
+				BDAB1A1C2C34731900C04228 /* InterstitialAdUtility.swift in Sources */,
+				BDB020ED2C34D62C00D1DB85 /* ActionGameCell02.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +793,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -437,12 +805,14 @@
 		};
 		BDAB1A112C34662400C04228 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D1F0DE2A95BD4E10A39620 /* Pods-Happy Mod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VVARKUXCR7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Happy Mod/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +820,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,12 +836,14 @@
 		};
 		BDAB1A122C34662400C04228 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558C844C9BBEC8466280DDC5 /* Pods-Happy Mod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VVARKUXCR7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Happy Mod/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,6 +851,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,6 +867,7 @@
 		};
 		BDAB1A142C34662400C04228 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCA30218F5BD28BB01B086F /* Pods-Happy ModTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,7 +875,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VVARKUXCR7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +888,7 @@
 		};
 		BDAB1A152C34662400C04228 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90522B6CAFD7C46FEB0C2BE6 /* Pods-Happy ModTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,7 +896,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VVARKUXCR7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.plexustechnology.Happy-ModTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +909,7 @@
 		};
 		BDAB1A172C34662400C04228 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E350E9C22A58BE38A7BF5B42 /* Pods-Happy Mod-Happy ModUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +928,7 @@
 		};
 		BDAB1A182C34662400C04228 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4952080C74E84A6BD16B0120 /* Pods-Happy Mod-Happy ModUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

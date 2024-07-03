@@ -11,5 +11,4 @@ class GameStartCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var gameAdsImageView: UIImageView!
     
-    
 }

@@ -11,6 +11,7 @@ class GameStartViewController: UIViewController {
     
     @IBOutlet weak var gameStartCollectionview: UICollectionView!
     @IBOutlet weak var playGameButton: UIButton!
+    @IBOutlet weak var gameNameLabel: UILabel!
     @IBOutlet weak var adsView: UIView!
     private var nativeAdUtility: NativeAdUtility?
     var bannerAdUtility = BannerAdUtility()
@@ -18,12 +19,15 @@ class GameStartViewController: UIViewController {
     var gameAdsImageArr =
     ["AdCard01","AdCard02","AdCard03","AdCard04","AdCard05","AdCard06","AdCard07","AdCard08","AdCard01","AdCard02","AdCard03","AdCard04"]
     
+    var gameName: String?
+    var gameLink: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.playGameButton.layer.cornerRadius = 10
         self.gameStartCollectionview.delegate = self
         self.gameStartCollectionview.dataSource = self
+        gameNameLabel.text = gameName
         nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
         bannerAdUtility.setupBannerAd(in: self, adUnitID: "ca-app-pub-3940256099942544/2435281174")
         
@@ -33,12 +37,15 @@ class GameStartViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-
-    @IBAction func btnPlayGameTapped(_ sender: UIButton) {
-        
-    }
     
+    @IBAction func btnPlayGameTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+              let webViewController = storyboard.instantiateViewController(identifier: "WebPlaygameViewController") as! WebPlaygameViewController
+              webViewController.urlString = gameLink
+              self.navigationController?.pushViewController(webViewController, animated: true)
+          }
 }
+
 
 extension GameStartViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
