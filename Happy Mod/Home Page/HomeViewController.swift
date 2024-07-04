@@ -15,11 +15,15 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var playGamesButton: UIButton!
     @IBOutlet weak var playGames_WinCashButton: UIButton!
     @IBOutlet weak var new_GamesButton: UIButton!
+    var nativeAdUtility: NativeAdUtility?
     
     var homeImageArr = ["Homepage01","Homepage02","Homepage03","Homepage04","Homepage05","Homepage06","Homepage07","Homepage08","Homepage09"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self)
+        nativeAdUtility?.loadAd()
 
         homeCollectionview.delegate = self
         homeCollectionview.dataSource = self
@@ -33,6 +37,7 @@ class HomeViewController: UIViewController {
     @IBAction func btnBackTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ThankYouViewController") as! ThankYouViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
 
     }

@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ActionGameViewController: UIViewController {
     
     @IBOutlet weak var actionGameCollectionview01: UICollectionView!
     @IBOutlet weak var actionGameCollectionView02: UICollectionView!
     @IBOutlet weak var adsView: UIView!
-    private var nativeAdUtility: NativeAdUtility?
+    var nativeAdUtility: NativeAdUtility?
     
     var imageArr = ["Truck Trials","Boat Battles","Jumo Justin","Canon Soldier"]
     var imageeArr = ["Play Cricket","Win Cricket"]
@@ -28,7 +29,23 @@ class ActionGameViewController: UIViewController {
         self.actionGameCollectionView02.delegate = self
         self.actionGameCollectionview01.dataSource = self
         self.actionGameCollectionView02.dataSource = self
-        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
+        
+        
+        nativeAdUtility?.loadAd()
+        
+        // Display the preloaded native ad
+        if let nativeAdUtility = nativeAdUtility, let preloadedNativeAd = nativeAdUtility.preloadedNativeAd {
+            guard
+                let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
+                let nativeAdView = nibObjects.first as? GADNativeAdView
+            else {
+                assert(false, "Could not load nib file for adView")
+                return
+            }
+            nativeAdUtility.setAdView(nativeAdView, for: preloadedNativeAd, in: adsView)
+        } else {
+            nativeAdUtility?.loadAd()
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
@@ -75,6 +92,7 @@ extension ActionGameViewController: UICollectionViewDelegate, UICollectionViewDa
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "GameStartViewController") as! GameStartViewController
         vc.gameName = gameName
         vc.gameLink = gameLink
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

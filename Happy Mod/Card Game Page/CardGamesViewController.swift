@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class CardGamesViewController: UIViewController {
     
     @IBOutlet weak var cardGameCollectionview01: UICollectionView!
     @IBOutlet weak var cardGameCollectionView02: UICollectionView!
     @IBOutlet weak var adsView: UIView!
-    private var nativeAdUtility: NativeAdUtility?
+    var nativeAdUtility: NativeAdUtility?
     
     var imageArr = ["Solitaire Klondike","Duo Cards","3D Solitaire","Gin Rummy Plus"]
     var imageeArr = ["Play Cricket","Win Cricket"]
@@ -20,22 +21,36 @@ class CardGamesViewController: UIViewController {
     var nameeArr = ["Play Cricket","Win Cricket"]
     let gameLinks = ["https://solitaired.com/klondike-solitaire","https://www.silvergames.com/en/duo-cards","https://www.gameflare.com/online-game/3d-solitaire/","https://www.mysteinbach.ca/game-zone/1708/gin-rummy-plus/"]
     let gameeLinks = ["https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.cardGameCollectionview01.delegate = self
         self.cardGameCollectionView02.delegate = self
         self.cardGameCollectionview01.dataSource = self
         self.cardGameCollectionView02.dataSource = self
-        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
+        
+        
+        // Display the preloaded native ad
+        if let nativeAdUtility = nativeAdUtility, let preloadedNativeAd = nativeAdUtility.preloadedNativeAd {
+            guard
+                let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
+                let nativeAdView = nibObjects.first as? GADNativeAdView
+            else {
+                assert(false, "Could not load nib file for adView")
+                return
+            }
+            nativeAdUtility.setAdView(nativeAdView, for: preloadedNativeAd, in: adsView)
+        } else {
+            nativeAdUtility?.loadAd()
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-
+    
 }
 
 extension CardGamesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

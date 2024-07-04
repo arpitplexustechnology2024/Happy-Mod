@@ -96,6 +96,9 @@ power plays that people play</string>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQn-k6-LBj">
                                         <rect key="frame" x="10" y="8" width="410" height="263.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="263.32999999999998" id="U1g-Ag-owx"/>
+                                        </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-fu-pdU">
                                         <rect key="frame" x="50" y="279.33333333333331" width="330" height="150"/>

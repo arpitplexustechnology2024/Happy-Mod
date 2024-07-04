@@ -6,16 +6,29 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ThankYouViewController: UIViewController {
-
+    
     @IBOutlet weak var adsView: UIView!
-    private var nativeAdUtility: NativeAdUtility?
+    var nativeAdUtility: NativeAdUtility?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
+        
+        // Display the preloaded native ad
+        if let nativeAdUtility = nativeAdUtility, let preloadedNativeAd = nativeAdUtility.preloadedNativeAd {
+            guard
+                let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
+                let nativeAdView = nibObjects.first as? GADNativeAdView
+            else {
+                assert(false, "Could not load nib file for adView")
+                return
+            }
+            nativeAdUtility.setAdView(nativeAdView, for: preloadedNativeAd, in: adsView)
+        } else {
+            nativeAdUtility?.loadAd()
+        }
     }
     
     
@@ -28,9 +41,9 @@ class ThankYouViewController: UIViewController {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "HomeViewController") as! HomeViewController
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
     
-
-
+    
+    
 }

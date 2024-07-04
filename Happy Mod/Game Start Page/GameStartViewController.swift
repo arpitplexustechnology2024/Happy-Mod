@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class GameStartViewController: UIViewController {
     
@@ -13,7 +14,7 @@ class GameStartViewController: UIViewController {
     @IBOutlet weak var playGameButton: UIButton!
     @IBOutlet weak var gameNameLabel: UILabel!
     @IBOutlet weak var adsView: UIView!
-    private var nativeAdUtility: NativeAdUtility?
+    var nativeAdUtility: NativeAdUtility?
     var bannerAdUtility = BannerAdUtility()
     
     var gameAdsImageArr =
@@ -28,7 +29,21 @@ class GameStartViewController: UIViewController {
         self.gameStartCollectionview.delegate = self
         self.gameStartCollectionview.dataSource = self
         gameNameLabel.text = gameName
-        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
+        
+        // Display the preloaded native ad
+        if let nativeAdUtility = nativeAdUtility, let preloadedNativeAd = nativeAdUtility.preloadedNativeAd {
+            guard
+                let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
+                let nativeAdView = nibObjects.first as? GADNativeAdView
+            else {
+                assert(false, "Could not load nib file for adView")
+                return
+            }
+            nativeAdUtility.setAdView(nativeAdView, for: preloadedNativeAd, in: adsView)
+        } else {
+            nativeAdUtility?.loadAd()
+        }
+        
         bannerAdUtility.setupBannerAd(in: self, adUnitID: "ca-app-pub-3940256099942544/2435281174")
         
     }
@@ -40,10 +55,10 @@ class GameStartViewController: UIViewController {
     
     @IBAction func btnPlayGameTapped(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-              let webViewController = storyboard.instantiateViewController(identifier: "WebPlaygameViewController") as! WebPlaygameViewController
-              webViewController.urlString = gameLink
-              self.navigationController?.pushViewController(webViewController, animated: true)
-          }
+        let webViewController = storyboard.instantiateViewController(identifier: "WebPlaygameViewController") as! WebPlaygameViewController
+        webViewController.urlString = gameLink
+        self.navigationController?.pushViewController(webViewController, animated: true)
+    }
 }
 
 

@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ClassicGamesViewController: UIViewController {
     
     @IBOutlet weak var classicGameCollectionview01: UICollectionView!
     @IBOutlet weak var classicGameCollectionView02: UICollectionView!
     @IBOutlet weak var adsView: UIView!
-    private var nativeAdUtility: NativeAdUtility?
+    var nativeAdUtility: NativeAdUtility?
     
     var imageArr = ["Garden Bloom","garden Match","Rush","Diamond Rush"]
     var imageeArr = ["Play Cricket","Win Cricket"]
@@ -20,23 +21,37 @@ class ClassicGamesViewController: UIViewController {
     var nameeArr = ["Play Cricket","Win Cricket"]
     let gameLinks = ["https://www.crazygames.com/game/garden-bloom","https://www.gamepix.com/play/garden-match-3d","https://poki.com/en/g/match-arena","https://gamesnacks.com/games/diamondrush"]
     let gameeLinks = ["https://www.crazygames.com/game/cricket-frvr","https://poki.com/en/g/cricket-world-cup"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.classicGameCollectionview01.delegate = self
         self.classicGameCollectionView02.delegate = self
         self.classicGameCollectionview01.dataSource = self
         self.classicGameCollectionView02.dataSource = self
-        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self, nativeAdPlaceholder: adsView)
+        
+        
+        // Display the preloaded native ad
+        if let nativeAdUtility = nativeAdUtility, let preloadedNativeAd = nativeAdUtility.preloadedNativeAd {
+            guard
+                let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
+                let nativeAdView = nibObjects.first as? GADNativeAdView
+            else {
+                assert(false, "Could not load nib file for adView")
+                return
+            }
+            nativeAdUtility.setAdView(nativeAdView, for: preloadedNativeAd, in: adsView)
+        } else {
+            nativeAdUtility?.loadAd()
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-
-
+    
+    
 }
 
 extension ClassicGamesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

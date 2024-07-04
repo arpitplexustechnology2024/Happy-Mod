@@ -12,16 +12,13 @@ class NativeAdUtility: NSObject {
     
     private var adLoader: GADAdLoader?
     private weak var rootViewController: UIViewController?
-    private weak var nativeAdPlaceholder: UIView?
     private var adUnitID: String?
-    private var nativeAdView: GADNativeAdView?
+    var preloadedNativeAd: GADNativeAd?
     
-    init(adUnitID: String, rootViewController: UIViewController, nativeAdPlaceholder: UIView) {
+    init(adUnitID: String, rootViewController: UIViewController) {
         self.adUnitID = adUnitID
         self.rootViewController = rootViewController
-        self.nativeAdPlaceholder = nativeAdPlaceholder
         super.init()
-        loadAd()
     }
     
     func loadAd() {
@@ -31,61 +28,27 @@ class NativeAdUtility: NSObject {
         adLoader?.load(GADRequest())
     }
     
-    private func setAdView(_ view: GADNativeAdView) {
-        nativeAdView = view
-        nativeAdPlaceholder?.addSubview(nativeAdView!)
-        nativeAdView?.translatesAutoresizingMaskIntoConstraints = false
+    func setAdView(_ view: GADNativeAdView, for nativeAd: GADNativeAd, in placeholder: UIView) {
+        placeholder.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
         
-        let viewDictionary = ["_nativeAdView": nativeAdView!]
-        rootViewController?.view.addConstraints(
+        let viewDictionary = ["_nativeAdView": view]
+        placeholder.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "H:|[_nativeAdView]|",
                 options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: viewDictionary)
         )
-        rootViewController?.view.addConstraints(
+        placeholder.addConstraints(
             NSLayoutConstraint.constraints(
                 withVisualFormat: "V:|[_nativeAdView]|",
                 options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: viewDictionary)
         )
-    }
-    
-    private func imageOfStars(from starRating: NSDecimalNumber?) -> UIImage? {
-        guard let rating = starRating?.doubleValue else {
-            return nil
-        }
-        if rating >= 5 {
-            return UIImage(named: "stars_5")
-        } else if rating >= 4.5 {
-            return UIImage(named: "stars_4_5")
-        } else if rating >= 4 {
-            return UIImage(named: "stars_4")
-        } else if rating >= 3.5 {
-            return UIImage(named: "stars_3_5")
-        } else {
-            return nil
-        }
-    }
-}
-
-extension NativeAdUtility: GADAdLoaderDelegate, GADNativeAdLoaderDelegate {
-    
-    func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
-        print("Failed to receive ad with error: \(error.localizedDescription)")
-    }
-    
-    func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
-        print("Received native ad: \(nativeAd)")
         
-        guard
-            let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
-            let nativeAdView = nibObjects.first as? GADNativeAdView
-        else {
-            assert(false, "Could not load nib file for adView")
-            return
-        }
-        
-        setAdView(nativeAdView)
-        nativeAd.delegate = self
+        populateAdContent(nativeAdView: view, nativeAd: nativeAd)
+    }
+    
+    private func populateAdContent(nativeAdView: GADNativeAdView, nativeAd: GADNativeAd) {
+        nativeAdView.nativeAd = nativeAd
         
         (nativeAdView.headlineView as? UILabel)?.text = nativeAd.headline
         nativeAdView.mediaView?.mediaContent = nativeAd.mediaContent
@@ -124,7 +87,35 @@ extension NativeAdUtility: GADAdLoaderDelegate, GADNativeAdLoaderDelegate {
         nativeAdView.advertiserView?.isHidden = nativeAd.advertiser == nil
         
         nativeAdView.callToActionView?.isUserInteractionEnabled = false
-        nativeAdView.nativeAd = nativeAd
+    }
+    
+    private func imageOfStars(from starRating: NSDecimalNumber?) -> UIImage? {
+        guard let rating = starRating?.doubleValue else {
+            return nil
+        }
+        if rating >= 5 {
+            return UIImage(named: "stars_5")
+        } else if rating >= 4.5 {
+            return UIImage(named: "stars_4_5")
+        } else if rating >= 4 {
+            return UIImage(named: "stars_4")
+        } else if rating >= 3.5 {
+            return UIImage(named: "stars_3_5")
+        } else {
+            return nil
+        }
+    }
+}
+
+extension NativeAdUtility: GADAdLoaderDelegate, GADNativeAdLoaderDelegate {
+    
+    func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
+        print("Failed to receive ad with error: \(error.localizedDescription)")
+    }
+    
+    func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
+        print("Received native ad: \(nativeAd)")
+        self.preloadedNativeAd = nativeAd
     }
 }
 
@@ -154,4 +145,3 @@ extension NativeAdUtility: GADNativeAdDelegate {
         print("nativeAdWillLeaveApplication called")
     }
 }
-

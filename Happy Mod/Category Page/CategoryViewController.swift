@@ -15,13 +15,14 @@ class CategoryViewController: UIViewController {
     @IBOutlet weak var Racing_GamesButton: UIButton!
     @IBOutlet weak var Mind_GamesButton: UIButton!
     @IBOutlet weak var Card_GamesButton: UIButton!
+    var nativeAdUtility: NativeAdUtility?
     var bannerAdUtility = BannerAdUtility()
     
     var cotegoryImageArr = ["categoryAds01","categoryAds02","categoryAds03","categoryAds01","categoryAds02","categoryAds03"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         categoryCollectionview.delegate = self
         categoryCollectionview.dataSource = self
         self.ActionGamesButton.layer.cornerRadius = 10
@@ -29,6 +30,9 @@ class CategoryViewController: UIViewController {
         self.Racing_GamesButton.layer.cornerRadius = 10
         self.Mind_GamesButton.layer.cornerRadius = 10
         self.Card_GamesButton.layer.cornerRadius = 10
+        
+        nativeAdUtility = NativeAdUtility(adUnitID: "ca-app-pub-3940256099942544/3986624511", rootViewController: self)
+        nativeAdUtility?.loadAd()
         
         bannerAdUtility.setupBannerAd(in: self, adUnitID: "ca-app-pub-3940256099942544/2435281174")
     }
@@ -41,38 +45,43 @@ class CategoryViewController: UIViewController {
     @IBAction func btnActionGameTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ActionGameViewController") as! ActionGameViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
     
     @IBAction func btnClassicGameTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClassicGamesViewController") as! ClassicGamesViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
     
     @IBAction func btnRacingGameTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RacingGamesViewController") as! RacingGamesViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
     
     @IBAction func btnMindGameTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MindGamesViewController") as! MindGamesViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
     
     @IBAction func btnCardGameTapped(_ sender: UIButton) {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CardGamesViewController") as! CardGamesViewController
+        vc.nativeAdUtility = nativeAdUtility
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
     }
-
+    
 }
 
 extension CategoryViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
